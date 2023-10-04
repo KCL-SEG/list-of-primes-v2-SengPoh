@@ -4,6 +4,9 @@
 def primes(number_of_primes):
     list = []
 
+    if (number_of_primes < 1):
+        raise ValueError("value must be at least 1")
+
     currentNum = 2
     for i in range(number_of_primes):
         while True:
